@@ -1,0 +1,62 @@
+.banner {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.banner img {
+  width: 100%;
+  height: 50vh;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Adjust the last value for transparency */
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.banner-text h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+/* About-us */
+.about-us {
+  margin: 48px 0;
+}
+.about-us .row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+}
+.our-mission .row {
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.about-us .row .col-6 {
+  width: 50%;
+}
+.about-us .row img {
+  height: 500px;
+  object-fit: contain;
+}

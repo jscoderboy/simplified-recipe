@@ -1,0 +1,11 @@
+<!-- Section A -->
+    <section class="section-a">
+      <div class="section-inner">
+        <h4>Browse through over 1,000 Tasty Recipes.</h4>
+        <h2>Healthy Cooking Recipes and the righth Nutrition.</h2>
+        <a href="#" class="btn animate">
+          <div class="hover"></div>
+          <span>More Recipes</span>
+        </a>
+      </div>
+    </section>

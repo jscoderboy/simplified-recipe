@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- animate on scroll (aos) -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Simplified Recipe</title>
+  </head>
+  <body>
+    <div id="preloader"></div>
+    <div id="overlay"></div>
+    <div id="mobile-menu" class="mobile-main-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Blogs</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <!-- <li class="mobile-only"><a href="index.html">Home</a></li>
+        <li class="mobile-only"><a href="#">Blogs</a></li>
+        <li class="mobile-only"><a href="#">About Us</a></li>
+        <li class="mobile-only"><a href="#">Contact Us</a></li> -->
+      </ul>
+    </div>
+    <header class="main-header">
+      <div class="logo">
+        <a href="index.html">
+          <img src="./images/logo.png" alt="Simplified Recipes" />
+        </a>
+      </div>
+      <!-- Desktop Main Menu -->
+      <nav class="desktop-main-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Blogs</a></li>
+          <li><a href="#">Recipes</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+      <!-- can be add social links here -->
+      <!-- <p>social links</p> -->
+    </header>
+    <!-- Hamburger Menu -->
+    <button id="menu-btn" class="hamburger" type="button">
+      <span class="hamburger-top"></span>
+      <span class="hamburger-middle"></span>
+      <span class="hamburger-bottom"></span>
+    </button>
+    <!-- Section A -->
+    <section class="section-a hero-section">
+      <div class="section-inner">
+        <h4>Browse through over 1,000 Tasty Recipes.</h4>
+        <h2>Healthy Cooking Recipes and the right Nutrition.</h2>
+        <a href="#" class="btn">
+          <div class="hover"></div>
+          <span>More Recipes</span>
+        </a>
+      </div>
+
+      <div class="scroll-arrow">
+        <svg width="30px" height="20px">
+          <path
+            stroke="#ffffff"
+            fill="none"
+            stroke-width="2px"
+            d="M2.000,5.000 L15.000,18.000 L28.000,5.000 "
+          ></path>
+        </svg>
+      </div>
+    </section>
+    <section class="section-b category py-48">
+      <div class="container">
+        <div class="category-title-row">
+          <h2>Categories</h2>
+          <a href="#" class="category-btn">View All Categories</a>
+        </div>
+        <div class="category-cards column" data-aos="fade-up"
+        data-aos-duration="2000">
+          <a href="#" class="cat-card">
+            <img src="./images/breakfast.png" alt="Breakfast" />
+            <h6>Breakfast</h6>
+          </a>
+          <a href="#" class="cat-card">
+            <img src="./images/vegan.png" alt="Vegan" />
+            <h6>Vegan</h6>
+          </a>
+          <a href="#" class="cat-card">
+            <img src="./images/meat.png" alt="meat" />
+            <h6>Meat</h6>
+          </a>
+          <a href="#" class="cat-card">
+            <img src="./images/cheesecake.png" alt="cheesecake" />
+            <h6>Dessert</h6>
+          </a>
+          <a href="#" class="cat-card">
+            <img src="./images/bento.png" alt="bento" />
+            <h6>Lunch</h6>
+          </a>
+          <a href="#" class="cat-card">
+            <img src="./images/soup.png" alt="Soup" />
+            <h6>Dinner</h6>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Section-c -->
+    <section class="section-c">
+      <div class="container">
+        <h2 class="secondary-heading text-center pb-20">
+          Simple And Tasty Recipes.
+        </h2>
+        <p class="text-center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat aut
+          enim pariatur autem blanditiis quo.
+        </p>
+        <div class="recipes-card-row">
+          <div class="card">
+            <img src="./images/section-c-susi.jpg" alt="sushi" />
+            <div class="card-title">
+              <h3 class="py-20">Sushi is one of the first foods.</h3>
+            </div>
+            <div class="timer">
+              <div>
+                <i class="fa-solid fa-clock"></i> <span>30 Minutes</span>
+              </div>
+              <div class="my-20">
+                <i class="fa-solid fa-utensils"></i> <span>Chicken</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/section-c-sashimi.jpg" alt="Sashimi" />
+            <div class="card-title">
+              <h3 class="py-20">
+                sashimi is raw fish or meat that has been expertly cut into thin
+                slices
+              </h3>
+            </div>
+            <div class="timer">
+              <div>
+                <i class="fa-solid fa-clock"></i> <span>30 Minutes</span>
+              </div>
+              <div class="my-20">
+                <i class="fa-solid fa-utensils"></i> <span>Chicken</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/section-c-udon.jpg" alt="udon" />
+            <div class="card-title">
+              <h3 class="py-20">Main noodle varieties eaten in Japan</h3>
+            </div>
+            <div class="timer">
+              <div>
+                <i class="fa-solid fa-clock"></i> <span>30 Minutes</span>
+              </div>
+              <div class="my-20">
+                <i class="fa-solid fa-utensils"></i> <span>Chicken</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/section-c-tofu.jpg" alt="Tofu" />
+            <div class="card-title">
+              <h3 class="py-20">
+                vegetarian alternative, in Southeast Asian countries like Japan
+              </h3>
+            </div>
+            <div class="timer">
+              <div>
+                <i class="fa-solid fa-clock"></i> <span>30 Minutes</span>
+              </div>
+              <div class="my-20">
+                <i class="fa-solid fa-utensils"></i> <span>Chicken</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Parallax effect section start -->
+    <!-- <section class="section-f title">
+      <h2>Paralla heading</h2>
+    </section> -->
+    <!-- 1st Paralax -->
+    <section class="parallax bg-one">
+      <h2 class="text-center uppercase">If you are a chef, no matter how good a chef you are,<br> it's not good cooking for yourself;<br> the joy is in cooking for others.</h2>
+    </section>
+    <!-- parallax effect section end -->
+    <!-- Section-D -->
+    <section class="section-d py-48 my-20">
+      <div class="container">
+        <div class="row">
+          <div class="inner-content">
+            <h2 class="secondary-heading py-20">
+              Everyone Can Be A Chef In Their Own Kitchen
+            </h2>
+            <p class="py-20">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat,
+              incidunt?
+            </p>
+            <a href="#" class="py-48 btn-secondary">Learn More</a>
+          </div>
+          <div>
+            <img src="./images/section-d-chef.jpg" alt="Chef" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section-E -->
+    <section class="section-e">
+      <div class="container">
+        <div class="instagram">
+          <a href="#" class="btn-insta">Visit Our Instagram</a>
+        </div>
+      </div>
+    </section>
+    <!-- Section F -->
+    <section class="section-f py-48 my-20">
+      <div class="container">
+        <h2 class="secondary-heading text-center uppercase py-48">Events</h2>
+        <div class="row">
+          <div class="inner-content">
+            <h2 class="secondary-heading py-20">
+              The Recipe for a Perfect Event
+            </h2>
+            <p class="py-20">
+              Events are very much like a recipe with a few tablespoon(s) of multiple ingredients put together.
+              Embrace the beauty of seasonal ingredients and learn how to cook sustainably. We promote mindful and eco-friendly cooking practices to create a positive impact on both your health and the environment.
+            </p>
+            <a href="#" class="py-48 btn-secondary">Join Now</a>
+          </div>
+          <div>
+            <img src="./images/section-f-event.jpg" alt="Event" />
+          </div>
+        </div>
+      </div>
+    </section>
+ </section>
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="container">
+        <div class="footer-content">
+          <p>Copyright &copy; 2024 - Simplified Recipes</p>
+          <div class="footer-nav">
+            <ul>
+              <li><a href="terms-conditions.html">Terms and conditions</a></li>
+              <li><a href="privacy-policy.html">Privacy policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- animate on scroll js -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 3000,
+        once: true,
+      });
+    </script>
+    <!--custom js -->
+    <script src="./js/app.js"></script>
+  </body>
+</html>
