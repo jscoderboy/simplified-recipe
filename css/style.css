@@ -849,6 +849,14 @@ img {
   .section-f .inner-content p {
     padding: 10px 0;
   }
+  /*drop-down blogs */
+  .sub-content .ingredients {
+    padding-left: 20px;
+  }
+  .section-instruction {
+    padding-bottom: 0px;
+  }
+
   footer {
     margin-top: 20px;
   }
