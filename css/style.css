@@ -843,6 +843,12 @@ img {
   .section-f .row {
     flex-direction: column-reverse;
   }
+  .section-f .inner-content {
+    padding: 20px;
+  }
+  .section-f .inner-content p {
+    padding: 10px 0;
+  }
   footer {
     margin-top: 20px;
   }

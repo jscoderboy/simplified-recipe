@@ -61,3 +61,17 @@
   height: 500px;
   object-fit: contain;
 }
+
+/* Media Query */
+@media (max-width: 600px) {
+  .banner-text h1 {
+    font-size: 3rem;
+  }
+  .blogs .secondary-heading {
+    font-size: 30px;
+    padding: 20px 0 10px 0;
+  }
+  .blogs .card-container {
+    margin-top: 0px;
+  }
+}
