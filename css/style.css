@@ -783,7 +783,8 @@ img {
 
 @media (max-width: 600px) {
   .section-inner {
-    bottom: 75px;
+    /* bottom: 75px; */
+    top: 50%;
     left: 20px;
   }
 
@@ -791,7 +792,7 @@ img {
     font-size: 40px;
   }
   .logo {
-    width: 60px;
+    width: 50px;
     /* margin: auto; */
   }
 }
