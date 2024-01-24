@@ -625,6 +625,34 @@ img {
   cursor: pointer;
   font-size: 1.2em;
 }
+/* Home-made-sushi Blog page */
+.section-instruction h3 {
+  font-size: 26px;
+  margin: 10px 0;
+}
+.section-instruction p {
+  font-size: 20px;
+  margin: 10px 0;
+}
+.section-instruction .sub-content {
+  margin: 48px 0;
+}
+.sub-content .ingredients {
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.sub-content ul {
+  padding: 20px 0;
+}
+.sub-content ul h4 {
+  padding-bottom: 20px;
+}
+.sub-content ul li {
+  /* list-style: disc; */
+  list-style: decimal;
+}
 /* Terms and conditions */
 .terms-c {
   padding: 40px 0;
