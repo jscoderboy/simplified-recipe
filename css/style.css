@@ -830,6 +830,10 @@ img {
     font-size: 22px;
     text-align: start;
   }
+  .section-e .btn-insta {
+    font-size: 18px;
+    padding: 13px 30px;
+  }
   .section-f {
     padding: 10px 0;
   }
