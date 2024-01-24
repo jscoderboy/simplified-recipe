@@ -797,7 +797,13 @@ img {
   .section-inner h2 {
     font-size: 40px;
   }
+  .section-b {
+    padding: 20px 0;
+  }
   .section-b .cat-card img {
-    max-width: 70px;
+    max-width: 60px;
+  }
+  .section-c .secondary-heading {
+    font-size: 30px;
   }
 }
