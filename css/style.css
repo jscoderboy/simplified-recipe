@@ -670,6 +670,9 @@ img {
 .terms-c article {
   padding: 10px 0;
 }
+.terms-c article h3 {
+  padding: 15px 0;
+}
 .terms-box {
   max-width: 100%;
   background-color: #111;
