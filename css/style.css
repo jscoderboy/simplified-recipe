@@ -784,10 +784,12 @@ img {
 @media (max-width: 600px) {
   .section-inner {
     /* bottom: 75px; */
-    top: 50%;
+    top: 35%;
     left: 20px;
   }
-
+  .section-inner .btn {
+    padding: 14px 40px;
+  }
   .section-inner h2 {
     font-size: 40px;
   }
