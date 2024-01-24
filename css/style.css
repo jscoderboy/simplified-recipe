@@ -860,6 +860,9 @@ img {
   .section-instruction {
     padding-bottom: 0px;
   }
+  .newsletter-content h2 {
+    font-size: 2rem;
+  }
 
   footer {
     margin-top: 20px;
