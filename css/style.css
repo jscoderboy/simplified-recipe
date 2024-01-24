@@ -803,6 +803,12 @@ img {
   .section-b .cat-card img {
     max-width: 60px;
   }
+  .section-b .cat-card {
+    padding: 1em 0;
+  }
+  .section-b .category-cards {
+    gap: 1em;
+  }
   .section-c .secondary-heading,
   .section-d .secondary-heading,
   .section-f .secondary-heading {
