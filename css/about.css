@@ -58,14 +58,14 @@
   width: 50%;
 }
 .about-us .row img {
-  height: 500px;
+  max-height: 500px;
   object-fit: contain;
 }
 
 /* Media Query */
 @media (max-width: 600px) {
   .banner-text h1 {
-    font-size: 3rem;
+    font-size: 2.8rem;
   }
   .blogs .secondary-heading {
     font-size: 30px;
@@ -76,5 +76,19 @@
   }
   .blogs .card-container .card img {
     height: 200px;
+  }
+  .about-us {
+    padding: 10px 0;
+    margin: 20px 0;
+  }
+  .about-us .secondary-heading {
+    font-size: 32px;
+  }
+  .about-us .row {
+    flex-direction: column-reverse;
+  }
+  .about-us .row .col-6 {
+    width: 100%;
+    margin-bottom: 20px;
   }
 }
