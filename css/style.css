@@ -110,24 +110,9 @@ img {
   margin-right: 20px;
   padding-bottom: 2px;
 }
-/* dropdown */
-.desktop-main-menu ul li ul.dropdown li {
-  display: block;
-  padding: 10px;
-  background-color: #000;
-}
-.desktop-main-menu ul li ul.dropdown {
-  width: 180px;
-  left: -20px;
-  margin-top: 3px;
-  color: #fff;
-  background-color: #000;
-  position: absolute;
-  z-index: 999;
-  display: none;
-}
-.desktop-main-menu ul li:hover ul.dropdown {
-  display: block;
+.desktop-main-menu ul li a {
+  font-size: 20px;
+  font-weight: 600;
 }
 
 /* Menu item bottom border */
@@ -145,6 +130,7 @@ img {
 }
 .desktop-main-menu ul li a:hover {
   color: #28a745;
+  /* font-weight: 600; */
 }
 .desktop-main-menu ul li a:hover::after {
   transform: scaleX(1);
@@ -289,6 +275,16 @@ img {
   background-attachment: fixed;
   padding: 15em 1em;
 }
+.parallax div {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.parallax div .btn {
+  background-color: #28a745;
+  border: none;
+  font-size: 18px;
+}
 .parallax h2 {
   font-size: 30px;
   line-height: 1.6;
@@ -313,7 +309,7 @@ img {
   height: 20px;
   background: none;
   border: none;
-  /* display: none;  */
+  display: none;
   /* can remove hamburger menu from desktop screen and can only show in mobile or desktop screen */
 }
 
@@ -464,22 +460,25 @@ img {
   padding-top: 1.5em;
 }
 /* Section-C */
-.section-c .recipes-card-row {
+.recipes-card-row {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2em;
   padding: 2em 0;
 }
-.section-c .recipes-card-row .card {
+.recipes-card-row .card {
   /* width: 300px; */
   height: auto;
   border: 1px solid #fff;
   padding: 15px;
   border-radius: 10px;
 }
-.section-c .recipes-card-row .card img {
+.recipes-card-row .card img {
   min-height: 200px;
   height: auto;
+}
+.recipes-card-row .card .card-title {
+  text-transform: uppercase;
 }
 .recipes-card-row .card .timer {
   display: flex;
@@ -512,11 +511,11 @@ img {
   max-width: 600px;
 }
 /* Section-E */
-.instagram {
+/* .instagram {
   display: flex;
   justify-content: center;
   width: 100%;
-}
+} */
 .section-f .container > .secondary-heading {
   text-decoration: underline;
 }
@@ -538,7 +537,7 @@ img {
   margin: 40px 0;
 }
 .blogs .card-container .card {
-  width: 325px;
+  max-width: 325px;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0px 2px 4px rgba(190, 190, 190, 0.2);
@@ -771,6 +770,9 @@ img {
   .desktop-main-menu {
     display: none;
   }
+  .hamburger {
+    display: block;
+  }
 
   /* Show main mobile items */
   .mobile-only {
@@ -834,10 +836,10 @@ img {
     font-size: 22px;
     text-align: start;
   }
-  .section-e .btn-insta {
+  /* .section-e .btn-insta {
     font-size: 18px;
     padding: 13px 30px;
-  }
+  } */
   .section-f {
     padding: 10px 0;
   }
