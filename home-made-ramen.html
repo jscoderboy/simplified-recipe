@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- about css -->
+    <link rel="stylesheet" href="./css/about.css" />
+    <title>Simplified Recipe</title>
+  </head>
+  <body>
+    <div id="preloader"></div>
+    <div id="overlay"></div>
+    <div id="mobile-menu" class="mobile-main-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blogs.html">Blogs</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <!-- <li class="mobile-only"><a href="index.html">Home</a></li>
+        <li class="mobile-only"><a href="#">Blogs</a></li>
+        <li class="mobile-only"><a href="#">About Us</a></li>
+        <li class="mobile-only"><a href="#">Contact Us</a></li> -->
+      </ul>
+    </div>
+    <header class="main-header">
+      <div class="logo">
+        <a href="index.html">
+          <img src="./images/logo.png" alt="Simplified Recipes" />
+        </a>
+      </div>
+      <!-- Desktop Main Menu -->
+      <nav class="desktop-main-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blogs.html">Blogs</a></li>
+          <li>
+            <a href="recipes.html">Recipes</a>
+          </li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+      <!-- can be add social links here -->
+      <!-- <p>social links</p> -->
+    </header>
+    <!-- Hamburger Menu -->
+    <button id="menu-btn" class="hamburger" type="button">
+      <span class="hamburger-top"></span>
+      <span class="hamburger-middle"></span>
+      <span class="hamburger-bottom"></span>
+    </button>
+    <!-- section-A -->
+    <section class="banner">
+      <div class="banner">
+        <img src="./images/section-c-udon.jpg" alt="home-made-sushi" />
+        <div class="overlay"></div>
+        <div class="banner-text">
+          <h1>Home made Udon</h1>
+        </div>
+      </div>
+    </section>
+    <!-- Section-B -->
+    <section class="section-instruction py-48">
+      <div class="container">
+        <h3 class="text-center">
+          Title: Mastering the Art of Homemade Udon: A Noodle Odyssey
+        </h3>
+        <p>Introduction:</p>
+        <p>
+          In the realm of comfort foods, few dishes bring as much satisfaction
+          as a steaming bowl of udon noodles. While store-bought varieties offer
+          convenience, the joy of crafting your own udon at home takes the
+          experience to a whole new level. Join us on a noodle odyssey as we
+          explore the art of making homemade udon – from the simple ingredients
+          to the soul-soothing bowl that awaits you.
+        </p>
+        <div class="sub-content">
+          <h3>Ingredients for Udon Noodles:</h3>
+          <div class="ingredients">
+            <ul>
+              <h4>All-Purpose Flour:</h4>
+              <li>
+                The backbone of udon noodles, providing the necessary structure
+                and texture.
+              </li>
+            </ul>
+            <ul>
+              <h4>Salt:</h4>
+              <li>
+                Enhances the flavor of the noodles, adding depth to each strand.
+              </li>
+            </ul>
+            <ul>
+              <h4>Water:</h4>
+              <li>
+                Binds the ingredients together to form a smooth, elastic dough.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class="sub-content">
+          <h3>Equipment:</h3>
+          <div class="ingredients">
+            <ul>
+              <h4>Mixing Bowl:</h4>
+              <li>For combining and kneading the udon dough.</li>
+            </ul>
+            <ul>
+              <h4>Rolling Pin:</h4>
+              <li>
+                To flatten and roll out the dough to the desired thickness.
+              </li>
+            </ul>
+            <ul>
+              <h4>Udon Noodle Cutter or Knife:</h4>
+              <li>For cutting the rolled-out dough into noodle strips.</li>
+            </ul>
+            <ul>
+              <h4>Pot for Boiling Water:</h4>
+              <li>To cook the udon noodles.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="container">
+        <div class="footer-content">
+          <p>Copyright &copy; 2024 - Simplified Recipes</p>
+          <div class="footer-nav">
+            <ul>
+              <li><a href="terms-conditions.html">Terms and conditions</a></li>
+              <li><a href="privacy-policy.html">Privacy policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--custom js -->
+    <script src="./js/app.js"></script>
+  </body>
+</html>
