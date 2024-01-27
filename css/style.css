@@ -629,18 +629,35 @@ img {
 .section-instruction p {
   font-size: 20px;
   margin: 10px 0;
+  color: #f4f4f4;
+}
+.section-instruction .intro-img img {
+  max-width: 600px;
+  margin: 0 auto;
+  display: block;
+  padding: 40px 0;
 }
 .section-instruction .sub-content {
   margin: 48px 0;
+  background-color: #28a745;
+}
+.sub-content h3 {
+  padding: 10px 20px;
+}
+.sub-content {
+}
+.sub-content img {
+  width: 50%;
 }
 .sub-content .ingredients {
   font-size: 20px;
-  display: flex;
+
+  /* display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: wrap; */
 }
 .sub-content ul {
-  padding: 20px 0;
+  padding: 20px 30px;
 }
 .sub-content ul h4 {
   padding-bottom: 20px;
