@@ -78,7 +78,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  text-transform: uppercase;
+  text-transform: capitalize;
   height: 100px;
   padding: 0 30px;
   background: rgba(0, 0, 0, 0.5);
@@ -622,6 +622,15 @@ img {
   font-size: 1.2em;
 }
 /* Home-made-sushi Blog page */
+.section-instruction .d-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.section-instruction .d-flex .fist-sub-content {
+  background-color: #555;
+  max-width: 70%;
+  flex-basis: 70%;
+}
 .section-instruction h3 {
   font-size: 26px;
   margin: 10px 0;
@@ -640,11 +649,15 @@ img {
 .section-instruction .sub-content {
   margin: 48px 0;
   background-color: #28a745;
+  padding: 30px 0;
+  max-width: 50%;
 }
 .sub-content h3 {
   padding: 10px 20px;
 }
-.sub-content {
+.sub-content-contaier {
+  display: flex;
+  justify-content: space-between;
 }
 .sub-content img {
   width: 50%;
