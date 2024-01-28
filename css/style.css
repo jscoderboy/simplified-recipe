@@ -13,6 +13,15 @@ body {
   background: #000;
   color: #fff;
 }
+/* preloader */
+#preloader {
+  background: #000 url("../images/preloader.gif") no-repeat center center;
+  background-size: 10%;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 100;
+}
 a {
   text-decoration: none;
   color: #fff;
@@ -88,9 +97,9 @@ img {
 }
 
 /* Desktop Menu */
-/* .desktop-main-menu {
+.desktop-main-menu {
   margin-right: 30px;
-} */
+}
 
 .desktop-main-menu ul {
   display: flex;
@@ -121,6 +130,7 @@ img {
 }
 .desktop-main-menu ul li a:hover {
   color: #28a745;
+  /* font-weight: 600; */
 }
 .desktop-main-menu ul li a:hover::after {
   transform: scaleX(1);
@@ -131,6 +141,7 @@ img {
 /* Sections */
 .hero-section {
   position: relative;
+  /* background-image: url("../images/hero-section-image.jpg"); */
   height: 100vh;
   background-position: center center;
   background-repeat: no-repeat;
@@ -152,7 +163,7 @@ img {
   animation: fadeInUp 0.5s ease-in-out;
 }
 
-.section-inner h1 {
+.section-inner h2 {
   font-size: 50px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -169,6 +180,7 @@ img {
 .section-a {
   background-image: url("../images/hero-section-image.jpg");
   width: 100%;
+  /* background-position: right; */
 }
 
 .btn {
@@ -207,7 +219,8 @@ img {
   transform: translateY(0);
 }
 /* Btn Secondary */
-.btn-secondary {
+.btn-secondary,
+.btn-insta {
   display: inline-block;
   cursor: pointer;
   text-align: center;
@@ -219,7 +232,40 @@ img {
   font-weight: bold;
   border-radius: 10px;
 }
-
+.btn-insta {
+  font-size: 20px;
+  padding: 15px 50px;
+  border: none;
+  background: #f09433;
+  background: -moz-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+.btn-insta:hover {
+  background-color: #e4405f;
+}
 /* Parallax Effect */
 .parallax {
   background-image: url("../images/parallax.jpg");
@@ -460,41 +506,73 @@ img {
 }
 .section-d img,
 .section-f img {
+  /* width: 50%; */
+  /* height: 50%; */
   max-width: 600px;
 }
 .section-f .container > .secondary-heading {
   text-decoration: underline;
 }
-/* Blogs Page Styling */
-.blogs .card {
+/* blog Page Styling */
+.blog .card {
   transition: transform 0.2s; /* Animation */
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-.blogs .card:hover {
+.blog .card:hover {
   transform: scale(1.1);
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
-.blogs .card-container {
+.blog .card-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   margin: 40px 0;
 }
-.blogs .card-container .card {
+.blog .card-container .card {
   max-width: 325px;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0px 2px 4px rgba(190, 190, 190, 0.2);
-  position: relative;
+  border: 1px solid #f4f4f4;
+  margin: 20px;
 }
-.blogs .card-container .card img {
+.blog .card-container .card img {
+  width: 100%;
+  /* height: auto; */
+  height: 250px;
+  object-fit: fill;
+}
+.blog .card-container .card-content {
+  padding: 16px;
+}
+.blog .card-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  text-transform: capitalize;
+}
+.blog .card-content .btn {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #333;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 16px;
+  color: #fff;
+}
+/* below contectnt */
+#blog2 .card-container .card {
+  position: relative;
+  border: none;
+}
+#blog2 .card-container .card img {
   width: 100%;
   height: 250px;
   object-fit: fill;
 }
-.blogs .card-content .btn {
+#blog2 .card-content .btn {
   display: inline-block;
   padding: 12px 35px;
   background-color: #28a745;
@@ -508,10 +586,9 @@ img {
   position: absolute;
   top: 40%;
   right: 25%;
-  z-index: 3;
+  /* z-index: -1; */
 }
 /* Related blog post */
-
 .related-blog .row {
   align-items: start;
 }
@@ -532,6 +609,7 @@ img {
   width: 180px;
   height: auto;
 }
+
 .newsletter-section {
   position: relative;
   height: 400px;
@@ -634,6 +712,10 @@ img {
 }
 .sub-content .ingredients {
   font-size: 20px;
+
+  /* display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; */
 }
 .sub-content ul {
   padding: 20px 30px;
@@ -642,11 +724,13 @@ img {
   padding-bottom: 20px;
 }
 .sub-content ul li {
+  /* list-style: disc; */
   list-style: disc;
 }
 /* Terms and conditions */
 .terms-c {
   padding: 40px 0;
+  /* margin: 40px 0; */
   margin-top: 100px;
   background-color: #f4f4f4;
 }
@@ -752,6 +836,10 @@ img {
 /* Media Queries */
 
 @media (max-width: 960px) {
+  /* i can remove hamburger menu icons from desktop mode and can show only in mobile screen */
+  /* .hamburger {
+    display: block;
+  } */
   /* Hide desktop menu */
   .desktop-main-menu {
     display: none;
@@ -776,15 +864,17 @@ img {
 @media (max-width: 600px) {
   .logo {
     width: 50px;
+    /* margin: auto; */
   }
   .section-inner {
+    /* bottom: 75px; */
     top: 35%;
     left: 20px;
   }
   .section-inner .btn {
     padding: 14px 40px;
   }
-  .section-inner h1 {
+  .section-inner h2 {
     font-size: 40px;
   }
   .section-b {
@@ -820,6 +910,10 @@ img {
     font-size: 22px;
     text-align: start;
   }
+  /* .section-e .btn-insta {
+    font-size: 18px;
+    padding: 13px 30px;
+  } */
   .section-f {
     padding: 10px 0;
   }
@@ -835,23 +929,12 @@ img {
   .section-f .inner-content p {
     padding: 10px 0;
   }
-  /*drop-down blogs */
+  /*drop-down blog */
   .sub-content .ingredients {
     padding-left: 20px;
   }
   .section-instruction {
     padding-bottom: 0px;
-  }
-  .section-instruction .d-flex {
-    flex-direction: column;
-  }
-  .section-instruction .d-flex .fist-sub-content {
-    flex-basis: 100%;
-    max-width: 100%;
-  }
-  .section-instruction .sub-content {
-    max-width: 100%;
-    margin: 10px 0;
   }
   .newsletter-content h2 {
     font-size: 2rem;
