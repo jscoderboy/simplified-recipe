@@ -888,6 +888,17 @@ img {
   .section-instruction {
     padding-bottom: 0px;
   }
+  .section-instruction .d-flex {
+    flex-direction: column;
+  }
+  .section-instruction .d-flex .fist-sub-content {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+  .section-instruction .sub-content {
+    max-width: 100%;
+    margin: 10px 0;
+  }
   .newsletter-content h2 {
     font-size: 2rem;
   }
