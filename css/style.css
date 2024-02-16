@@ -163,7 +163,7 @@ img {
   animation: fadeInUp 0.5s ease-in-out;
 }
 
-.section-inner h2 {
+.section-inner h1 {
   font-size: 50px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -488,6 +488,15 @@ img {
 .recipes-card-row .card .timer span {
   margin-left: 10px;
 }
+/* Online class section */
+.online-class .inner-content .btn {
+  background-color: #28a745;
+  border: none;
+  border-radius: 4px;
+}
+.online-class .row {
+  flex-direction: row-reverse;
+}
 .section-d .row,
 .section-f .row {
   display: flex;
@@ -506,8 +515,6 @@ img {
 }
 .section-d img,
 .section-f img {
-  /* width: 50%; */
-  /* height: 50%; */
   max-width: 600px;
 }
 .section-f .container > .secondary-heading {
@@ -587,6 +594,9 @@ img {
   top: 40%;
   right: 25%;
   /* z-index: -1; */
+}
+#blog2 .card-content {
+  padding: 0;
 }
 /* Related blog post */
 .related-blog .row {
